@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Animated Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>MySite</h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="darkToggle">🌙</button>
+    </nav>
+  </header>
+
+  <section id="hero" class="reveal">
+    <h2>Welcome to MySite</h2>
+    <p>Your one-stop solution for web needs.</p>
+    <a href="#contact" class="cta-button">Get In Touch</a>
+    <div class="slider">
+      <img src="https://picsum.photos/id/1015/800/300" class="slide active" />
+      <img src="https://picsum.photos/id/1016/800/300" class="slide" />
+      <img src="https://picsum.photos/id/1018/800/300" class="slide" />
+    </div>
+  </section>
+
+  <section id="about" class="reveal">
+    <h2>About Us</h2>
+    <p>We are a team of web developers passionate about creating beautiful, functional websites.</p>
+  </section>
+
+  <section id="services" class="reveal">
+    <h2>Our Services</h2>
+    <div class="card-container">
+      <div class="card">Web Design</div>
+      <div class="card">Development</div>
+      <div class="card">SEO Optimization</div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MySite. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
